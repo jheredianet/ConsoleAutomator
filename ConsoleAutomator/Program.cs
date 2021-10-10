@@ -25,10 +25,20 @@ namespace ConsoleAutomator
                     RedirectStandardError = true,
                     UseShellExecute = false,
                     RedirectStandardOutput = true,
-                    CreateNoWindow = false
+                    CreateNoWindow = true
                 }
             };
+
+            proc.EnableRaisingEvents = true;
+            proc.OutputDataReceived += (s, e) => Debug.WriteLine(e.Data);
+            proc.ErrorDataReceived += (s, e) => Debug.WriteLine($@"Error: {e.Data}");
             proc.Start();
+            proc.BeginOutputReadLine();
+            proc.BeginErrorReadLine();
+            proc.WaitForExit();
+
+
+
         }
     }
 }
