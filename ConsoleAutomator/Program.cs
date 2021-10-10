@@ -21,9 +21,9 @@ namespace ConsoleAutomator
                 {
                     FileName = "find",/// @"C:\Windows\System32\cmd.exe",
                     Arguments = command,
-                    RedirectStandardInput = false,
-                    RedirectStandardError = false,
-                    UseShellExecute = false,
+                    RedirectStandardInput = true,
+                    RedirectStandardError = true,
+                    UseShellExecute = true,
                     RedirectStandardOutput = true,
                     CreateNoWindow = false
                 }
