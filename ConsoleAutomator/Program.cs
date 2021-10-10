@@ -23,7 +23,7 @@ namespace ConsoleAutomator
                     Arguments = command,
                     RedirectStandardInput = true,
                     RedirectStandardError = true,
-                    UseShellExecute = true,
+                    UseShellExecute = false,
                     RedirectStandardOutput = true,
                     CreateNoWindow = false
                 }
