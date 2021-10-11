@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ConsoleAutomator": {
+      "commandName": "Project",
+      "commandLineArgs": "cmd.exe \"/C dir\""
+    }
+  }
+}
