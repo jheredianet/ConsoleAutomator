@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 Install .Net Core latest version for your plataform.
 
 ```bash
-Give examples
+Go to the link in order to download the installer
 ```
 
 ### Installing
